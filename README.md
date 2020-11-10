@@ -1,1 +1,4 @@
-# The-Hong-Kong-Polytechnic-University-PhD-Thesis-Latex-Template
+PolyU Thesis Template
+=====================
+
+This template is a simple modification of [the newest Clean **Thesis** package](http://cleanthesis.der-ric.de/).
