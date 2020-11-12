@@ -3,7 +3,8 @@
 % **************************************************
 \documentclass[%
     paper=A4,               % paper size --> A4 is default in Germany
-    twoside=false,           % onesite or twoside printing
+    oneside,
+    %twoside=true,           % onesite or twoside printing
     openright,              % doublepage cleaning ends up right side
     parskip=half,           % spacing value / method for paragraphs
     chapterprefix=true,     % prefix for chapter marks
@@ -33,6 +34,9 @@
 \DeclareOldFontCommand{\sl}{\normalfont\slshape}{\@nomath\sl}
 \DeclareOldFontCommand{\sc}{\normalfont\scshape}{\@nomath\sc}
 \makeatother
+
+\usepackage[hmarginratio=35:25,hmargin=35mm,vmarginratio=3:2,vmargin=30mm]{geometry}
+
 
 % **************************************************
 % Document CONTENT
@@ -72,6 +76,16 @@
 \tableofcontents				% display table of contents
 \cleardoublepage
 
+\listoffigures
+\cleardoublepage
+
+\listoftables
+\cleardoublepage
+
+
+\lstlistoflistings
+\cleardoublepage
+
 % --------------------------
 % Body matter
 % --------------------------
@@ -105,23 +119,14 @@
 }
 \cleardoublepage
 
-\listoffigures
-\cleardoublepage
-
-\listoftables
-\cleardoublepage
-
-\lstlistoflistings
-\cleardoublepage
-
 \appendix\cleardoublepage
 \input{content/chapter-appendix}       % INCLUDE: appendix
 
-\cleardoublepage
-\input{content/colophon}
-
-\cleardoublepage
-\input{content/declaration}
+%\cleardoublepage
+%\input{content/colophon}
+%
+%\cleardoublepage
+%\input{content/declaration}
 \clearpage
 
 \newpage
